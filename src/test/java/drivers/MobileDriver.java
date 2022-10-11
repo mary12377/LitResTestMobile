@@ -1,20 +1,21 @@
-package autotests.drivers;
+package drivers;
 
 
-import autotests.config.LocalConfig;
+
 import com.codeborne.selenide.WebDriverProvider;
+import config.LocalConfig;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.remote.AutomationName;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-
 
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
@@ -32,8 +33,6 @@ public class MobileDriver implements WebDriverProvider {
         options.setDeviceName(configLocal.device());
 //       options.setPlatformVersion("11.0");
         options.setApp(app.getAbsolutePath());
-        options.setAppPackage("org.wikipedia.alpha");
-        options.setAppActivity("org.wikipedia.main.MainActivity");
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }
@@ -46,9 +45,8 @@ public class MobileDriver implements WebDriverProvider {
         }
     }
     private File getApp() {
-        String appUrl = "https://github.com/wikimedia/apps-android-wikipedia/" +
-                "releases/download/latest/app-alpha-universal-release.apk";
-        String appPath = "src/test/resources/apps/app-alpha-universal-release.apk";
+        String appUrl = "https://apkpure.com/ru/litres-read-and-listen/ru.litres.android/download";
+        String appPath = "src/test/resources/apps/LitRes Read and listen_v3.64.0(2)-gp_apkpure.com.apk";
 
         File app = new File(appPath);
         if (!app.exists()) {

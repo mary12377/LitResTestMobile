@@ -1,6 +1,7 @@
-package autotests.helpers;
+package helpers;
 
-import autotests.config.BrowserstackKeys;
+
+import config.BrowserstackKeys;
 import org.aeonbits.owner.ConfigFactory;
 
 import static io.restassured.RestAssured.given;

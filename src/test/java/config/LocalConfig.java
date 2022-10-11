@@ -1,4 +1,4 @@
-package autotests.config;
+package config;
 
 import org.aeonbits.owner.Config;
 

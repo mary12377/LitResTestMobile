@@ -1,8 +1,7 @@
-package autotests.drivers;
+package drivers;
 
-import autotests.config.BrowserstackKeys;
-import autotests.config.LocalConfig;
 import com.codeborne.selenide.WebDriverProvider;
+import config.BrowserstackKeys;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;

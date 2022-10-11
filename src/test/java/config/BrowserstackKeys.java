@@ -1,4 +1,4 @@
-package autotests.config;
+package config;
 
 import org.aeonbits.owner.Config;
 
@@ -21,7 +21,7 @@ public interface BrowserstackKeys extends Config {
     @DefaultValue("selenide android test")
     String name();
 
-    @DefaultValue("bs://be7df9b0372faab5e8aa57e9db4c88850545a65f")
+
     String app();
 
     @DefaultValue("Google Pixel 3a xl")
