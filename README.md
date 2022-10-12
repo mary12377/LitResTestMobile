@@ -1,4 +1,4 @@
-# :four_leaf_clover:Проект по автоматизации тестирования сайта с фильмами:four_leaf_clover:
+# :four_leaf_clover:Проект по автоматизации тестирования сайта Mobile and Web:four_leaf_clover:
 <a id="anchor"></a>
 ## <a target="_blank" href="https://www.litres.ru/">Сайт LitRes</a>
 ![LitRes](images/LitRes.png)
@@ -27,3 +27,53 @@
 <img width="6%" title="GitHub" src="images/Github.png">
 <img width="6%" title="Telegram" src="images/Telegram.png">
 </p>
+
+## :four_leaf_clover: Реализованные проверки
+- [x] Проверка онбординга
+- [x] Проверяем что появилось название книги
+- [x] Проверка результатов поиска
+
+
+## :four_leaf_clover: Сборка в Jenkins
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/LitResTest/">Сборка в Jenkins</a>
+<p align="center">
+<img title="Jenkins Dashboard" src="images/">
+</p>  
+
+## :four_leaf_clover: Запуск из терминала
+Локальный запуск:
+```
+gradle clean test
+```
+
+Удаленный запуск:
+```
+clean
+test
+
+```
+
+## :four_leaf_clover: Allure отчет
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/LitResTest/1/allure/">Сборка в Allure </a>
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/">
+</p>
+
+- ### Страница с проведенными тестами
+<p align="center">
+<img title="Allure Test Page" src="images/">
+</p>
+
+## :four_leaf_clover: Отчет в Telegram
+<p align="center">
+<img title="TELEGRAMBOT" src="images/">
+</p>
+
+
+
+## :four_leaf_clover: Видео примеры прохождения тестов
+> К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
+<p align="center">
+  <img title="Selenoid Video" src="images/">
+
+:arrow_up: [Вверх страницы](#anchor)

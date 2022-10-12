@@ -16,8 +16,8 @@ public class LocalMobileTests extends TestBase {
         ClickTheAd.clickAllPopUp();
         step("Поиск книги которой нет на сайте ", () ->
                 $(AppiumBy.id("ru.litres.android:id/nav_search")).click());
-                $(AppiumBy.id("ru.litres.android:id/et_search_query")).sendKeys("тестирование dot com");
-        step("Проверка результатов", () ->
+                $(AppiumBy.id("ru.litres.android:id/et_search_query")).sendKeys("Савин тестирование dot com");
+        step("Проверка результатов поиска", () ->
                 $(AppiumBy.id("ru.litres.android:id/title")).shouldHave(text("Nothing found")));
     }
 
