@@ -16,7 +16,7 @@ import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
-import static helpers.Attach.sessionId;
+import static helpers.Attach.getSessionId;
 import static io.qameta.allure.Allure.step;
 
 
@@ -44,7 +44,7 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
-        String sessionId = sessionId();
+        String sessionId = getSessionId();
 
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
