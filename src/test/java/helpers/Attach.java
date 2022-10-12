@@ -1,5 +1,6 @@
 package helpers;
 
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -8,6 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
     @Attachment(value = "{attachName}", type = "text/plain")
@@ -31,7 +33,12 @@ public class Attach {
                 + BrowserStack.videoUrl(sessionId)
                 + "' type='video/mp4'></video></body></html>";
     }
-
+    public static void browserConsoleLogs() {
+        attachAsText(
+                "Browser console logs",
+                String.join("\n", Selenide.getWebDriverLogs(String.valueOf(BROWSER)))
+        );
+    }
     public static String sessionId() {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }

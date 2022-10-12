@@ -10,6 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class LocalMobileTests extends TestBase {
+
     @Test
     void theBookWasNotFound() {
         ClickTheAd.clickAllPopUp();
