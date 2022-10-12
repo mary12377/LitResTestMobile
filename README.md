@@ -54,7 +54,7 @@ gradle clean test
 Удаленный запуск:
 ```
 clean
-test
+web
 
 ```
 
@@ -76,8 +76,11 @@ test
 
 
 
-## :four_leaf_clover: Видео примеры прохождения тестов
-> К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
+## :four_leaf_clover: Видео примеры прохождения Mobile тестов
+<p align="center">
+  <img title="Selenoid Video" src="images/vidoMobileTest.gif">
+
+## :four_leaf_clover: Видео примеры прохождения Web тестов
 <p align="center">
   <img title="Selenoid Video" src="images/">
 
