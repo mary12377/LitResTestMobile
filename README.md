@@ -37,7 +37,7 @@
 ## :four_leaf_clover: Сборка в Jenkins
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/LitResTest/">Сборка в Jenkins</a>
 <p align="center">
-<img title="Jenkins Dashboard" src="images/">
+<img title="Jenkins Dashboard" src="images/J.png">
 </p>  
 
 - ### Главная страница сборки Jenkins
@@ -54,24 +54,23 @@ gradle clean test
 Удаленный запуск:
 ```
 clean
-web
+test
 
 ```
 
 ## :four_leaf_clover: Allure отчет
-### <a target="_blank" href="https://jenkins.autotests.cloud/job/LitResTest/1/allure/">Сборка в Allure </a>
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/">
 </p>
 
 - ### Страница с проведенными тестами
 <p align="center">
-<img title="Allure Test Page" src="images/">
+<img title="Allure Test Page" src="images/A.png">
 </p>
 
 ## :four_leaf_clover: Отчет в Telegram
 <p align="center">
-<img title="TELEGRAMBOT" src="images/">
+<img title="TELEGRAMBOT" src="images/T.png">
 </p>
 
 
