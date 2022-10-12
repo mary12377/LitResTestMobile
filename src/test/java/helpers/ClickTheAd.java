@@ -18,6 +18,7 @@ public class ClickTheAd {
                 $(AppiumBy.xpath("//android.widget.Button[@text='CLEAR' and @index='9']")).click();
                 $(AppiumBy.xpath("//android.widget.Button[@text='NO' and @index='1']")).click();
                 $(AppiumBy.xpath("//android.widget.ImageView[@index='2']")).click();
+                $(AppiumBy.xpath("//android.widget.ImageView[contains(@resource-id,'icon')]")).click();
 
     }
 }
