@@ -40,6 +40,11 @@
 <img title="Jenkins Dashboard" src="images/">
 </p>  
 
+- ### Главная страница сборки Jenkins
+<p align="center">
+<img title="Allure Test Page" src="images/J1.png">
+</p>
+
 ## :four_leaf_clover: Запуск из терминала
 Локальный запуск:
 ```
