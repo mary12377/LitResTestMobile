@@ -79,8 +79,6 @@ test
 <p align="center">
   <img title="Selenoid Video" src="images/vidoMobileTest.gif">
 
-## :four_leaf_clover: Видео примеры прохождения Web тестов
-<p align="center">
-  <img title="Selenoid Video" src="images/">
+
 
 :arrow_up: [Вверх страницы](#anchor)
