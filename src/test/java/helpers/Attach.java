@@ -1,7 +1,6 @@
 package helpers;
 
 import com.codeborne.selenide.Selenide;
-import config.Project;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -50,7 +49,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = String.format("https://%svideo/%s.mp4", Project.config.remoteDriverUrl(), sessionId);
+        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
