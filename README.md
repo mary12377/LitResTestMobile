@@ -59,9 +59,6 @@ test
 ```
 
 ## :four_leaf_clover: Allure отчет
-<p align="center">
-<img title="Allure Overview Dashboard" src="images/">
-</p>
 
 - ### Страница с проведенными тестами
 <p align="center">
